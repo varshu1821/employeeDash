@@ -1,57 +1,50 @@
 import React from 'react';
-import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { RiLogoutBoxLine, RiHomeLine, RiUserLine } from 'react-icons/ri';
+import { useNavigate } from 'react-router-dom';
 import './home.css';
 
-const Home = () => {
-//   useEffect(() => {
-//     const arrow = document.querySelector(".arrow");
-// const list = document.querySelector(".drop-down");
-// //Show the list on btn click
-// arrow.addEventListener("click", () => {
-//   list.classList.toggle("show");
-//   arrow.classList.toggle("up");
-// })
-// }, []);
+
+const Home = ({setIsLoggedIn}) => {
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    localStorage.setItem('isLoggedIn', 'false');
+    navigate('/');
+  };
+
   return (
-  
-    <header class="header">
-    <div class="container">
-      <div class="logo">LOGO</div>
-      <nav class="navigation">
-        <i class="fa-solid fa-plane nav-item"></i>
-        <i class="fa-solid fa-bell nav-item"></i>
-        <i class="fa-solid fa-message nav-item"></i>
-        <div class="nav-item arrow">&#9001</div>
-      </nav>
+    <div>
+      <header>
+        <h1>Employee Dashboard</h1>
+        <div className="logout" onClick={handleLogout}>
+          <RiLogoutBoxLine size={42}/>
+          <h5>logout</h5>
+        </div>
+      </header>
+      <main>
+        <div className="container">
+        <div className="dashboard">
+            
+            <h2>Welcome to the Employee Dashboard! Here you can access various features and information related to your employment.</h2>
+            <br/>
+            <ul>
+              <h3>Search your fellow colleagues by clicking on user icon below</h3>
+              <h3>Check your performance metrics and feedback</h3>
+              <h3>Access company announcements and news</h3>
+              <h3>Connect with your colleagues and teams</h3>
+            </ul>
+          </div>
+        </div>
+        <div className="container2">
+        <Link to="/"><RiHomeLine size={42}/><h4>Home</h4></Link>
+        
+        <Link to="/employee"><RiUserLine size={42}/><h4>Users</h4></Link>
+        
+        </div>
+      </main>
+      
     </div>
-    <div class="drop-down">
-      <ul class="list">
-        <li class="profile list-item">
-          <span class="pro-img">R</span>
-          <span class="name">Ruka Kane</span>
-        </li>
-        <li class="list-item">
-          <i class="fas fa-cog icon"></i>
-          <span>Settings</span>
-          <div class="arrow-right">&#9001</div>
-        </li>
-        <li class="list-item">
-          <i class="fa-solid fa-book icon"></i>
-          <span>Tutorials</span>
-          <div class="arrow-right">&#9001</div>
-          </li>
-        <li class="list-item">
-          <i class="fa-solid fa-moon icon"></i>
-          <span>Night Mode</span>
-        </li>
-        <li class="list-item">
-          <i class="fa-solid fa-right-from-bracket icon"></i>
-          <span>Log Out</span>
-          
-        </li>
-      </ul>
-    </div>
-  </header>
   );
 };
 

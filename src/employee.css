@@ -30,3 +30,15 @@ body{
 .templateContainer .template_Container .template img{
     height: 250px;
 }
+.container2 {
+    position: fixed; /* Position the container relative to the viewport */
+    left: 0;
+    right: 0;
+    bottom: 0; /* Stick it to the bottom of the screen */
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    background-color: rgb(92, 213, 213);
+  }

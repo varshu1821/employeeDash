@@ -1,4 +1,8 @@
 import React, {useState} from "react";
+import { RiLogoutBoxLine, RiHomeLine, RiUserLine } from 'react-icons/ri';
+import { Link } from 'react-router-dom';
+
+
 import './employee.css';
 import data from "./TemplateData.json";
 
@@ -32,6 +36,12 @@ function Employee() {
                 )
               })
           }
+        </div>
+        <div className="container2">
+        <Link to="/"><RiHomeLine size={42}/><h4>Home</h4></Link>
+        
+        <Link to="/employee"><RiUserLine size={42}/><h4>Users</h4></Link>
+        
         </div>
       </div>
     </>
