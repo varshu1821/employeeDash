@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import React, { useState, useEffect } from 'react';
 import LoginPage from './LoginPage';
 import Home from './Home'
+import Employee from './Employee'
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -20,7 +21,10 @@ useEffect(() => {
           path="/home"
           element={isLoggedIn ? <Home /> : <Navigate to="/"/>}
       /> 
-
+      <Route 
+          path="/employee" 
+          element={isLoggedIn ? <Employee /> : <LoginPage/>} 
+      /> 
       <Route 
           path="/" 
           element={isLoggedIn ? <Home /> : <LoginPage/>} 
