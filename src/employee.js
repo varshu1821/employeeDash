@@ -42,7 +42,7 @@ function Employee() {
           }
         </div>
         <div className="container2">
-        <Link to="/"><RiHomeLine size={42}/><h4>Home</h4></Link>
+        <Link to="/home"><RiHomeLine size={42}/><h4>Home</h4></Link>
         
         <Link to="/employee"><RiUserLine size={42}/><h4>Users</h4></Link>
         

@@ -15,9 +15,13 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/home" element={isLoggedIn ? <Home isLoggedIn={setIsLoggedIn} /> : <Navigate to="/" />} />
+      {/* <Route path="/" element={isLoggedIn ? <Home/> : <LoginPage />} />
+        <Route path="/home" element={isLoggedIn ? <Home/> : <Navigate to="/" />} />
         <Route path="/employee" element={isLoggedIn ? <Employee /> : <LoginPage />} />
-        <Route path="/" element={isLoggedIn ? <Home isLoggedIn={setIsLoggedIn} /> : <LoginPage />} />
+      </Routes> */}
+      <Route path="/" element={<LoginPage />} />
+        <Route path="/home" element={<Home/>} />
+        <Route path="/employee" element={<Employee />} />
       </Routes>
     </Router>
   );

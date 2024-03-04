@@ -15,16 +15,11 @@ const LoginPage = () => {
   const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
   const handleLogin = () => {
-    // Validate email and password
-    if (!email || !password) {
-      setError('Please enter both email and password');
-      return;
-    }
-
+    
     // Check if user exists in the database
     const user = findUserByEmail(email);
     if (!user || user.password !== password) {
-      alert('Invalid email or password');
+      alert('No user exist, try signing up');
       return;
     }
 

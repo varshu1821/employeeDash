@@ -151,14 +151,15 @@
 
   .logout{
       position: absolute;
-      top: 50px; /* Adjust as needed */
-      right: 40px; /* Adjust as needed */
+      top: 10px; /* Adjust as needed */
+      right: 10px; /* Adjust as needed */
   }
   .container {
     display: flex;
     justify-content: center; /* Horizontally center */
     align-items: center; /* Vertically center */
     color: black;
+    margin-top: 100px;
   }
   .container2 {
     position: fixed; /* Position the container relative to the viewport */

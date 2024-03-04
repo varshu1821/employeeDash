@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import './home.css';
 
 
-const Home = ({setIsLoggedIn}) => {
+const Home = () => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
@@ -37,7 +37,7 @@ const Home = ({setIsLoggedIn}) => {
           </div>
         </div>
         <div className="container2">
-        <Link to="/"><RiHomeLine size={42}/><h4>Home</h4></Link>
+        <Link to="/home"><RiHomeLine size={42}/><h4>Home</h4></Link>
         
         <Link to="/employee"><RiUserLine size={42}/><h4>Users</h4></Link>
         
