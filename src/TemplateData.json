@@ -1,80 +1,116 @@
 [
     {
-        "Eid": 1,
+        "id": 1,
         "image": "https://tse3.mm.bing.net/th?id=OIP.krOpfaYGnwpp-9apD4gvAAHaE8&pid=Api&P=0&h=180",
-        "title": "Gaming Laptop",
-        "price": 335
+        "employee_id": "EMP001",
+        "name": "John Doe",
+        "DOB": "1990-05-15",
+        "role": "Manager"
+        
     },
     {
         "id": 2,
-        "image": "https://m.xcite.com/media/catalog/product/cache/1/small_image/350x/9df78eab33525d08d6e5fb8d27136e95/i/m/image_template_2_-_2020-11-23t113708.928.jpg",
-        "title": "Macbook M1 Air",
-        "price": 450
+        "image": "https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "employee_id": "EMP002",
+        "name": "Emily Johnson",
+        "DOB": "1992-09-24",
+        "role": "Developer"
+        
+        
     },
     {
         "id": 3,
-        "image": "https://m.xcite.com/media/catalog/product/cache/1/small_image/350x/9df78eab33525d08d6e5fb8d27136e95/p/s/ps5_b2.jpg",
-        "title": "PlayStation 5 Console",
-        "price": 200
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8jORd--5UKjWvV0JNhSlUjn1iQmxMRY_JqA&usqp=CAU",
+        "employee_id": "EMP004",
+        "name": "Jessica Brown",
+        "DOB": "1987-11-30",
+        "role": "HR Manager"
+        
+        
     },
     {
-        "id": 3,
-        "image": "https://m.xcite.com/media/catalog/product/cache/1/small_image/350x/9df78eab33525d08d6e5fb8d27136e95/p/s/ps5_b2.jpg",
-        "title": "PlayStation 5 Console",
-        "price": 200
+        "id": 4,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7R1-iBTMTHEyl99YywmKIg6nL7a2vV24bqQ&usqp=CAU",
+        "employee_id": "EMP003",
+        "name": "Michael Williams",
+        "DOB": "1989-02-18",
+        "role": "Designer"
+        
     },
     {
-        "id": 3,
-        "image": "https://m.xcite.com/media/catalog/product/cache/1/small_image/350x/9df78eab33525d08d6e5fb8d27136e95/p/s/ps5_b2.jpg",
-        "title": "PlayStation 5 Console",
-        "price": 200
+        "id": 5,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYHBFJv3TaC88dRS4DsOttQXf5RNcksX4DLjx2VJKFMbJMVJCJsESXa8HE2klX87EikjE&usqp=CAU",
+        "employee_id": "EMP005",
+        "name": "David Martinez",
+        "DOB": "1993-04-05",
+        "role": "Data Analyst"
     },
     {
-        "id": 3,
-        "image": "https://m.xcite.com/media/catalog/product/cache/1/small_image/350x/9df78eab33525d08d6e5fb8d27136e95/p/s/ps5_b2.jpg",
-        "title": "PlayStation 5 Console",
-        "price": 200
+        "id": 6,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF1cLOB3yG86kQzICa6nBi_-0627D2ZvaE1G7D87y3vMX4je8fLnWdEchUd-nN6vpwjBs&usqp=CAU",
+        "employee_id": "EMP004",
+        "name": "Robert Williams",
+        "DOB": "1985-12-10",
+        "role": "Analyst"
+    
     },
     {
-        "id": 3,
-        "image": "https://m.xcite.com/media/catalog/product/cache/1/small_image/350x/9df78eab33525d08d6e5fb8d27136e95/p/s/ps5_b2.jpg",
-        "title": "PlayStation 5 Console",
-        "price": 200
+        "id": 7,
+        "image": "data:image/jpeg;base64,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",
+        "employee_id": "EMP001",
+        "name": "John Doe",
+        "DOB": "1990-05-15",
+        "role": "Manager"
     },
     {
-        "id": 3,
-        "image": "https://m.xcite.com/media/catalog/product/cache/1/small_image/350x/9df78eab33525d08d6e5fb8d27136e95/p/s/ps5_b2.jpg",
-        "title": "PlayStation 5 Console",
-        "price": 200
+        "id": 8,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq5NKJ-YirSm9lcDfOIwlLYzpPbXmN7PXpCFcvJoBVMGTb15YcS8Vo3f0ox1l5QRRngYk&usqp=CAU",
+        "employee_id": "EMP006",
+        "name": "Sarah Wilson",
+        "DOB": "1984-08-22",
+        "role": "Project Manager"
     },
     {
-        "id": 3,
-        "image": "https://m.xcite.com/media/catalog/product/cache/1/small_image/350x/9df78eab33525d08d6e5fb8d27136e95/p/s/ps5_b2.jpg",
-        "title": "PlayStation 5 Console",
-        "price": 200
+        "id": 9,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuSthvB_HS4xru4KQuIGdNl-TVI__HQjECVw&usqp=CAU",
+        "employee_id": "EMP007",
+        "name": "Eva Rodriguez",
+        "DOB": "1993-04-12",
+        "role": "HR Specialist"
     },
     {
-        "id": 3,
-        "image": "https://m.xcite.com/media/catalog/product/cache/1/small_image/350x/9df78eab33525d08d6e5fb8d27136e95/p/s/ps5_b2.jpg",
-        "title": "PlayStation 5 Console",
-        "price": 200
+        "id": 10,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpdK5BBJGsMj1mc1DQMJLeZcv_DCmgjUUU9w&usqp=CAU",
+        "employee_id": "EMP010",
+        "name": "Brian Taylor",
+        "DOB": "1991-06-30",
+        "role": "IT Support Specialist"
     },
     {
-        "id": 3,
-        "image": "https://m.xcite.com/media/catalog/product/cache/1/small_image/350x/9df78eab33525d08d6e5fb8d27136e95/p/s/ps5_b2.jpg",
-        "title": "PlayStation 5 Console",
-        "price": 200
+        "id": 11,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP8WOqboEzs8p1jmQ15FKgJAwgU89FRCr7qg&usqp=CAU",
+        "employee_id": "EMP008",
+        "name": "David Martinez",
+        "DOB": "1986-11-25",
+        "role": "Sales Representative"
     },
     {
-        "id": 3,
-        "image": "https://m.xcite.com/media/catalog/product/cache/1/small_image/350x/9df78eab33525d08d6e5fb8d27136e95/p/s/ps5_b2.jpg",
-        "title": "PlayStation 5 Console",
-        "price": 200
+        "id": 12,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQXWn_mjo5ivwJVWMYyccK67JZwevJSsVMcQ&usqp=CAU",
+        "employee_id": "EMP005",
+        "name": "Smitha",
+        "DOB": "1992-07-05",
+        "role": "Project Manager"
     },
     {
-        "id": 3,
-        "image": "https://m.xcite.com/media/catalog/product/cache/1/small_image/350x/9df78eab33525d08d6e5fb8d27136e95/p/s/ps5_b2.jpg",
-        "title": "PlayStation 5 Console",
-        "price": 200
+        "id": 13,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiPjPR7Afg4EuetydMlHUOf1e-kH8jQWQffbqrk3K4O-8LMsd2q7k1sO11EGPm3J1iT1E&usqp=CAU",
+        "employee_id": "EMP006",
+        "name": "Sophie Davis",
+        "DOB": "1987-09-18",
+        "role": "QA Tester"
     }
+
+
+
 ]

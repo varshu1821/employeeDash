@@ -20,9 +20,9 @@ function Employee() {
           {
             data 
               .filter((val) => {
-                if(searchTerm == ""){
+                if(searchTerm ==""){
                   return val;
-                }else if(val.title.toLowerCase().includes(searchTerm.toLowerCase())){
+                }else if(val.name.toLowerCase().includes(searchTerm.toLowerCase())){
                   return val;
                 }
               })
@@ -31,7 +31,11 @@ function Employee() {
                   <div className="template" key={val.id}>
                       <img src={val.image} alt="" />
                       <h3>{val.title}</h3>
-                      <p className="price">${val.price}</p>
+                      <p style={{ fontWeight: "bold" }} className="employee_id">EMPLOYEE ID:{val.employee_id}</p>
+                      <p style={{ fontWeight: "bold" }} classList="name">NAME: {val.name}</p>
+                      <p style={{ fontWeight: "bold" }} classList="DOB:">DOB:{val.DOB}</p>
+                      <p style={{ fontWeight: "bold" }} classList="ROLE:">ROLE:{val.role}</p>
+
                   </div> 
                 )
               })

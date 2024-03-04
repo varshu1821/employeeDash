@@ -113,13 +113,7 @@ const handlePassword = () => {
       <i class="fa fa-user-plus" aria-hidden="true"></i>
       </button>
    </div>
-     <div class="other">
-      {/* <button class="btn submits frgt-pass">Forgot Password</button> */}
-      
-
-   </div>
-     
-
+    
   </div>
   
 
