@@ -1,8 +1,17 @@
 .App {
-  text-align: center;
+/* Layout Properties */
+top: 0px;
+left: 0px;
+width: 360px;
+height: 800px;
+/* UI Properties */
+background: transparent linear-gradient(180deg, #000000 0%, #000E09 100%) 0% 0% no-repeat padding-box;
+mix-blend-mode: normal;
+border-radius: 28px;
+opacity: 1;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +44,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

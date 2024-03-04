@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import LoginPage from './LoginPage';
+import Home from './Home'
 
-function App() {
+const App = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+// Check for authentication status in local storage when the component mounts
+useEffect(() => {
+  const isAuthenticated = localStorage.getItem('isLoggedIn') === 'true';
+  setIsLoggedIn(isAuthenticated);
+}, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes> 
+
+      <Route
+          path="/home"
+          element={isLoggedIn ? <Home /> : <Navigate to="/"/>}
+      /> 
+
+      <Route 
+          path="/" 
+          element={isLoggedIn ? <Home /> : <LoginPage/>} 
+      /> 
+      </Routes>
+      
+    </Router>
   );
-}
+};
 
 export default App;
